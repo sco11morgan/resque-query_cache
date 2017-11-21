@@ -2,6 +2,8 @@
 
 A Resque plugin. Requires Resque ~> 1.20
 
+This plugin will enable the ActiveRecord query cache for the duration of the job.  This mimics the behavior of what happens during a Rails web request.  After the job finished the query cache will be cleared.
+
 ## Installation
 
 Add this line to your application's Gemfile:
