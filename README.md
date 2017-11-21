@@ -23,10 +23,10 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-require "resque-query_cache"
+require 'resque-query_cache'
 
 class ExampleJob
-  include Resque::Plugins::QueryCache
+  extend Resque::Plugins::QueryCache
 
   def self.perform(*args)
     # your magic/heavy lifting goes here.
